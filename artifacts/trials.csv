@@ -1,0 +1,20 @@
+stage,name,settings,cagr,sharpe,max_drawdown,trades,avg_exposure,chosen
+ref,NIFTY 50 buy and hold,,0.1350,0.8437,-0.3844,,,False
+0,"Model picks, today's settings",exits all 4/2/20; regime off; cash idle,0.0779,0.5435,-0.2486,1369.0000,0.8180,False
+1,"Momentum only, exits 4/2/20",exits all 4/2/20; regime off; cash idle,0.0795,0.6175,-0.2764,992.0000,0.6158,False
+1,"Momentum only, exits none/3/40",exits all none/3/40; regime off; cash idle,0.1595,1.0121,-0.3002,492.0000,0.7442,False
+1,"Momentum only, exits none/3/60",exits all none/3/60; regime off; cash idle,0.1782,1.0845,-0.3053,371.0000,0.8012,True
+1,"Breakout only, exits 4/2/20",exits all 4/2/20; regime off; cash idle,0.0633,0.5810,-0.1965,1054.0000,0.6344,False
+1,"Breakout only, exits none/3/40",exits all none/3/40; regime off; cash idle,0.0773,0.6000,-0.2542,530.0000,0.7973,False
+1,"Breakout only, exits none/3/60",exits all none/3/60; regime off; cash idle,0.1002,0.7337,-0.2329,401.0000,0.8190,True
+1,"Pullback only, exits 4/2/20",exits all 4/2/20; regime off; cash idle,0.0761,0.5899,-0.2608,1273.0000,0.8021,True
+1,"Pullback only, exits 2/2/5",exits all 2/2/5; regime off; cash idle,-0.0206,-0.1250,-0.3854,2453.0000,0.4255,False
+1,"Pullback only, exits none/2/5",exits all none/2/5; regime off; cash idle,-0.0326,-0.2176,-0.4348,2411.0000,0.4532,False
+2,Model picks,"exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime off; cash idle",0.2692,1.3674,-0.3544,522.0000,0.9538,True
+2,Model ranked by p_win,"exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime off; cash idle",0.2308,1.2228,-0.3363,529.0000,0.9556,False
+2,Model ranked by expected_return,"exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime off; cash idle",0.2490,1.2605,-0.3593,527.0000,0.9561,False
+2,All rule ideas,"exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime off; cash idle",0.1958,1.0951,-0.3463,689.0000,0.9499,False
+3,"Model picks, regime half","exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime half; cash idle",0.2536,1.4475,-0.2491,522.0000,0.8423,True
+3,"Model picks, regime skip","exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime skip; cash idle",0.2109,1.2593,-0.2319,427.0000,0.8169,False
+4,"Model picks, cash_sweep liquid","exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime half; cash liquid",0.2632,1.4944,-0.2479,522.0000,0.8419,False
+4,"Model picks, cash_sweep nifty","exits momentum none/3/60, breakout none/3/60, pullback 4/2/20; regime half; cash nifty",0.2773,1.3493,-0.3878,522.0000,0.8399,False
