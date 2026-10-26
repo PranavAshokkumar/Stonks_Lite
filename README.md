@@ -191,7 +191,9 @@ flowchart LR
     rules --> labels["Triple-barrier<br/>labels"]
     labels --> model["Random forest<br/>+ calibration"]
     model --> er["Expected return<br/>after costs"]
-    er --> out["Ideas · paper account<br/>· backtest"]
+    er --> out["Ideas · paper<br/>account · backtest"]
+    out ~~~ pad[" "]:::spacer
+    classDef spacer fill:transparent,stroke:transparent
 ```
 
 **Every trade gets its own exits** (`config.RULE_EXITS`). The entry is always the next day's open:
