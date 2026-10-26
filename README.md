@@ -186,15 +186,12 @@ python -m backend.update_data                 # then restart the server
 
 ```mermaid
 flowchart LR
-    data[("Daily prices<br/>50 NSE stocks + NIFTY 50<br/>2005 – 2026")] --> feat["Features<br/>returns · RSI · ATR<br/>volume · breadth"]
-    feat --> rules{"Three rules<br/>momentum<br/>breakout<br/>pullback"}
-    feat --> score["0–10 trend score<br/>(no training)"]
-    rules --> labels["Triple-barrier labels<br/>did it win?"]
-    labels --> model["Random forest<br/>+ Platt calibration"]
-    model --> er["P(win) → expected<br/>return after costs"]
-    er --> ideas["💡 Ideas page"]
-    er --> paper["📄 Paper account<br/>+ replay clock"]
-    er --> bt["📈 Backtest"]
+    data[("Daily prices<br/>2005 – 2026")] --> feat["Features<br/>+ trend score"]
+    feat --> rules["3 rules<br/>propose ideas"]
+    rules --> labels["Triple-barrier<br/>labels"]
+    labels --> model["Random forest<br/>+ calibration"]
+    model --> er["Expected return<br/>after costs"]
+    er --> out["Ideas · paper account<br/>· backtest"]
 ```
 
 **Every trade gets its own exits** (`config.RULE_EXITS`). The entry is always the next day's open:
